@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Tajawal;
+  src: url("./assets/Tajawal-Regular.ttf");
+}
+
+* {
+  outline: none !important;
+}
+
+html {
+  font-size: 0.9rem !important;
+  font-family: Tajawal, Arial, Helvetica, sans-serif !important;
+  scroll-behavior: smooth;
+  scrollbar-width: thin !important;
+}
+
+body {
+  height: 300vh;
+  direction: rtl;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-arrow {
+  filter: brightness(0) saturate(100%) invert(78%) sepia(14%) saturate(0%)
+    hue-rotate(154deg) brightness(98%) contrast(92%);
+}
+
+.filter-red {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(96%) saturate(7452%)
+    hue-rotate(12deg) brightness(102%) contrast(116%);
+}
+
+.whatsapp-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whatsapp-message .message-content {
+  @apply bg-white dark:bg-[#202c33];
+  padding: 10px;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.whatsapp-message .message {
+  margin: 5px 0;
+  padding: 0 10px;
+  line-height: 24px;
+  @apply text-[#202c33] dark:text-white;
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.whatsapp-message img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
