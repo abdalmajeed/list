@@ -20,7 +20,7 @@ export default {
         v-html="description"
         @click="$emit('copy')"
         id="message"
-        class="message cursor-pointer"
+        class="message cursor-pointer whitespace-pre-line"
       />
     </div>
   </div>

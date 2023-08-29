@@ -355,7 +355,7 @@ const services = computed(() => {
       @copy="copy"
     />
     <div
-      class="w-16 p-2 flex flex-col items-center gap-y-2 rounded-xl absolute top-0 -left-[4.5rem] bg-gray-100 dark:bg-gray-700"
+      class="md:w-16 md:h-max w-max h-16 p-2 flex md:flex-col items-center gap-x-2 md:gap-y-2 rounded-xl absolute -bottom-[4.5rem] left-0 md:top-0 md:-left-[4.5rem] bg-gray-100 dark:bg-gray-700"
     >
       <button
         @click="copy"
